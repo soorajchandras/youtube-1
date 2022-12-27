@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+}
+/* header */
+.material-symbols-outlined{
+    color: rgb(96,96,96);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left img{
+    height: 20px;
+    margin-left: 15px;
+}
+.header i{
+    padding: 0px 7px;
+    cursor: pointer;
+}
+.header-middle form{
+    border: 1px solid #ddd;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.header-middle input{
+    width: 500px;
+    padding: 10px;
+    margin:0;
+    border-radius: 0;
+    border: none;
+}
+.header-middle button{
+    border: none;
+}
+/* main-body */
+.mainbody{
+    height:calc(100vh-70px);
+    display: flex;
+}
+.sidebar{
+    height: 100%;
+    width:230px;
+    background-color: white;
+    overflow-y: scroll;
+}
+.sidebar-catogories{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+.sidebar-catogorie{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+.sidebar-catogorie span{
+    margin-left: 15px;
+}
+.sidebar-catogorie:hover{
+    background: #e5e5e5  
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+hr{
+    height: 2px;
+    background-color: #e5e5e5;
+    border: none;
+}
+/* videos */
+.mainbar{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd;
+    overflow: auto;
+}
+.video-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.video{
+    width:310px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.video-thumbnail{
+    width: 100%;
+    height:170px;
+    cursor: pointer;
+}
+
+.video-thumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width:100%
+}
+.video-thumbnail img:hover{
+    transform: scale(1.07);
+}
+
+.user img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.video-details{
+    display: flex;
+    margin-top: 10px;
+}
+.tittle{
+    display: flex;
+    flex-direction: column;
+}
+.tittle h3{
+    height: 18px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+.tittle a,span{
+    text-decoration: none;
+    color: rgb(96,96,96);
+    font-size: 12px;
+}
